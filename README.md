@@ -9,7 +9,7 @@ Snide comments are my own. :-)
 All modules/themes used for this fully functional system are included in the file structure. 
 The #1 user name is: administrator and the password is "password." You'll probably want to change that.
 
---roles
+#roles
 There are three roles related to usage of the site:
 Events Coordinator - this role has the most permissions related to events and room reservations, but not full administrator privileges
 Scheduler - for staff who schedule events/programs
@@ -17,7 +17,7 @@ Staff Desk - for use at desks for scheduling study rooms
 
 Add/edit/delete roles to suit your usage.
 
---taxonomies
+#taxonomies
 Event Category and Age Group taxonomies were created to reflect a local evanced implementation. When migrating content, keep your taxonomies exact and then change values if desired after the migration process is completed.
 
 #database file
@@ -54,4 +54,4 @@ There could be a way to do this in a less time-consuming by working from the eva
 --Creating a custom module that will recommend programs that are similar to those attended by patrons
 --a better method for migrating registration information.
 
-If you charge for meeting room usage (my library doesn't) agreseravations module integrates with Commerce (I think).
+If you charge for meeting room usage (the library this was developed for doesn't) agreseravations module integrates with Commerce (I think).
