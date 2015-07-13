@@ -2,7 +2,7 @@
 a drupal-based event calendar and room reservation system. Includes code for migrating existing registration from e-Vanced to the drupal installation
 
 #project status
-The project in this repo was tanked late in the development. I am sharing this -- and was given permission by Westlake Porter Public Library -- in order that other libraries can get some use out of it. I do not expect to pursue further development of it. I am happy to answer questions about what I have done, for however long I remember.
+The project in this repo was tanked late in the development. I am sharing this -- and was given permission by Westlake Porter Public Library -- in order that someone else can get some use out of it. I do not expect to pursue further development of it, but who knows. I am happy to answer questions about what I have done, for however long I remember.
 Snide comments are my own. :-)
 
 #drupal
