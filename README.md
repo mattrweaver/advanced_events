@@ -5,9 +5,11 @@ a drupal-based event calendar and room reservation system. Includes code for mig
 The project in this repo was tanked late in the development. I am sharing this -- and was given permission by Westlake Porter Public Library -- in order that someone else can get some use out of it. I do not expect to pursue further development of it, but who knows. I am happy to answer questions about what I have done, for however long I remember.
 Snide comments are my own. :-)
 
-#drupal
-All modules/themes used for this fully functional system are included in the file structure. The #1 user name is: administrator and the password is "password." You'll probably want to change that.
+#drupal files
+All modules/themes used for this fully functional system are included in the file structure. 
+The #1 user name is: administrator and the password is "password." You'll probably want to change that.
 
+--roles
 There are three roles related to usage of the site:
 Events Coordinator - this role has the most permissions related to events and room reservations, but not full administrator privileges
 Scheduler - for staff who schedule events/programs
@@ -15,7 +17,7 @@ Staff Desk - for use at desks for scheduling study rooms
 
 Add/edit/delete roles to suit your usage.
 
-#taxonomies
+--taxonomies
 Event Category and Age Group taxonomies were created to reflect a local evanced implementation. When migrating content, keep your taxonomies exact and then change values if desired after the migration process is completed.
 
 #database file
@@ -48,8 +50,8 @@ the file evanced_reginfo_migrate.php is a simple php script that will take exist
 There could be a way to do this in a less time-consuming by working from the evanced database, but that was a question for later development.
 
 #things I didn't get to, and might work on again if the spirit moves me
-a scheduling system for posting events to social-networking 
+--a scheduling system for posting events to social-networking 
+--Creating a custom module that will recommend programs that are similar to those attended by patrons
+--a better method for migrating registration information.
 
-Creating a custom module that will recommend programs that are similar to those attended by patrons
-
-a better method for migrating registration information.
+If you charge for meeting room usage (my library doesn't) agreseravations module integrates with Commerce (I think).
