@@ -2,15 +2,23 @@
 a drupal-based event calendar and room reservation system. Includes code for migrating existing registration from e-Vanced to the drupal installation
 
 #project status
-The work in this repo is not an attempt to create something all libraries can use. This project was tanked late in the development. I am sharing this -- and was given permission by Westlake Porter Public Library -- in order that other libraries can get some use out of it. I do not expect to pursue further development of it. I am happy to answer questions about what I have done, however. 
+The project in this repo was tanked late in the development. I am sharing this -- and was given permission by Westlake Porter Public Library -- in order that other libraries can get some use out of it. I do not expect to pursue further development of it. I am happy to answer questions about what I have done, however. 
 Snide comments are my own. :-)
 
-#drupal files
-All modules/themes used for this fully functional system are included in the file structure.
+#drupal
+All modules/themes used for this fully functional system are included in the file structure. The #1 user name is: administrator and the password is "password." You'll probably want to change that.
+
+There are three roles related to usage of the site:
+Events Coordinator - this role has the most permissions related to events and room reservations, but not full administrator privileges
+Scheduler - for staff who schedule events/programs
+Staff Desk - for use at desks for scheduling study rooms
+
+Add/edit/delete roles to suit your usage.
 
 #database file
 the mysql file in the drupal directory provides a fully-configured site without any event or room node content. Room reservation is handled by the drupal.org/project/agreservation module. See that module's documentation for info on setting up rooms. 
 
+There are a few sample rooms and room types included. The agreservations module's way of handling rooms makes sense given that it is designed for managing hotel rooms. 
 
 #date issues 
 The date module is a dev release. The stable release would display on the month view as the first of the month, and the year. The development release will display only Month Year.
@@ -32,6 +40,11 @@ Produce a csv file for whatever date range you choose and select whatever fields
 In the feeds tamper configuration, date modules have already been set with date formats for evanced data.
 
 #Importing existing registration data
-the file ____________works.php is a simple php script that will take existing patron registration data from evanced and import to the new nodes based in the nid. Registration information must be generated for each event individually and exported to csv files. This will be kinda tedious, but better than manually entering such data. 
+the file evanced_reginfo_migrate.php is a simple php script that will take existing patron registration data from evanced and import to the new nodes' entity references for the entity registration module, based in the nid. Registration information must be generated for each event individually and exported to csv files. This will be kinda tedious, but better than manually entering such data. 
 
-There could be a way to do this in a less time-consuming by working from the evanced database, but that was a question for later development, which this project won't see.
+There could be a way to do this in a less time-consuming by working from the evanced database, but that was a question for later development.
+
+#things I didn't get to, and might work on again if the spirit moves me
+a scheduling system for posting events to social-networking 
+
+Creating a custom module that will recommend programs that are similar to those attended by patrons
