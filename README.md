@@ -15,6 +15,9 @@ Staff Desk - for use at desks for scheduling study rooms
 
 Add/edit/delete roles to suit your usage.
 
+#taxonomies
+Event Category and Age Group taxonomies were created to reflect a local evanced implementation. When migrating content, keep your taxonomies exact and then change values if desired after the migration process is completed.
+
 #database file
 the mysql file in the drupal directory provides a fully-configured site without any event or room node content. Room reservation is handled by the drupal.org/project/agreservation module. See that module's documentation for info on setting up rooms. 
 
