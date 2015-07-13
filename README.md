@@ -5,7 +5,7 @@ a drupal-based event calendar and room reservation system. Includes code for mig
 The project in this repo was tanked late in the development. I am sharing this -- and was given permission by Westlake Porter Public Library -- in order that someone else can get some use out of it. I do not expect to pursue further development of it, but who knows. I am happy to answer questions about what I have done, for however long I remember.
 Snide comments are my own. :-)
 
-#drupal files
+#website files
 All modules/themes used for this fully functional system are included in the file structure. 
 The #1 user name is: administrator and the password is "password." You'll probably want to change that.
 
@@ -34,6 +34,7 @@ The date module is a dev release. The stable release would display on the month 
 Date fields should be considered to UTC.
 
 The reservation content type includes separate fields to account for the total booking time of an event, and the actual event time for public events.
+
 The date field requires a year, which is redundant for event time; so I used drupal.org/project/timefield which doesn't capture date information at all. This reduces the number of clicks when creating events. 
 
 #Reservation nodes
@@ -41,9 +42,13 @@ The fields for this content type are based on one library's usage of the evanced
 
 drupal.org/project/multi_node_add module is used for creating nodes in bulk, especially when entering a large number of related events that cannot easily be scheduled using date repeat functions.
 
+drupal.org/project/replicate is used so that when repeating events are entered, they existing in the calendar as individual nodes for each instance, rather than one node for the entire series. This arrangement makes for better regisration management. Disable at your leisure/peril.
+
 views bulk operations is used for editing nodes in bulk. 
+
 #Feeds/tamper
 Feeds module has been set up to import nodes based on event data generated from evanced's room reservation reports in csv format. 
+
 Produce a csv file for whatever date range you choose and select whatever fields you require. Make sure they correlate to fields in your Reservation content type. Then alter the mappings in the feeds module. 
 In the feeds tamper configuration, date modules have already been set with date formats for evanced data.
 
