@@ -58,7 +58,7 @@ the file evanced_reginfo_migrate.php is a simple php script that will take exist
 There could be a way to do this in a less time-consuming by working from the evanced database, but that was a question for later development.
 
 #things I didn't get to, and might work on again if the spirit moves me
-a scheduling system for posting events to social-networking 
+a scheduling system for posting events to social-networking sites
 
 Creating a custom module that will recommend programs that are similar to those attended by patrons
 
