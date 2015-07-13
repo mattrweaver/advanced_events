@@ -11,8 +11,11 @@ The #1 user name is: administrator and the password is "password." You'll probab
 
 #roles
 There are three roles related to usage of the site:
+
 Events Coordinator - this role has the most permissions related to events and room reservations, but not full administrator privileges
+
 Scheduler - for staff who schedule events/programs
+
 Staff Desk - for use at desks for scheduling study rooms
 
 Add/edit/delete roles to suit your usage.
