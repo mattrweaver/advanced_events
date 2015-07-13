@@ -48,3 +48,5 @@ There could be a way to do this in a less time-consuming by working from the eva
 a scheduling system for posting events to social-networking 
 
 Creating a custom module that will recommend programs that are similar to those attended by patrons
+
+a better method for migrating registration information.
