@@ -51,7 +51,9 @@ There could be a way to do this in a less time-consuming by working from the eva
 
 #things I didn't get to, and might work on again if the spirit moves me
 a scheduling system for posting events to social-networking 
+
 Creating a custom module that will recommend programs that are similar to those attended by patrons
+
 a better method for migrating registration information.
 
 If you charge for meeting room usage (the library this was developed for doesn't) agreseravations module integrates with Commerce (I think).
