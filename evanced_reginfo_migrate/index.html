@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>evanced registration migrate</title>
+         <script type="text/javascript">function openWin() {window.open("download_instructions.html","mywindow","width=600,height=400");}</script>
+    </head>
+    <body><p  style="text-align:center;">Files containing registration information must be downloaded from evanced. To learn how:<a href="#" onclick="openWin()"><button>Download Instructions</button></a></p>
+            <form action="evanced_reginfo_upload2.php" method="post" style="text-align:center;">
+                <fieldset style="width:30%;display:block;margin-left:auto;margin-right:auto;">
+                <p>Enter the nid for the event (drupal site)</p>
+                <input type="text" name="nid" />
+                <p>Upload the file with registration info (downloaded from evanced)</p>
+                <input type="file" name="reg_info" />
+                <input type="submit" name="submit" />
+                </fieldset>
+            </form>
+        
+    </body>
+</html>
